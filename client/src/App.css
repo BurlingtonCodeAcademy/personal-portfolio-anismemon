@@ -1,0 +1,242 @@
+/********** global styles **********/
+
+* {
+    padding: none;
+    margin: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/********** header styles **********/
+
+#headerLine {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 40px;
+    background: linear-gradient(rgb(61, 56, 121), rgb(126, 121, 182));
+    height: 12vh;
+    /* font-family: 'Bellota Text', cursive; */
+    font-family: 'Gotu', sans-serif;
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+#langButtons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 2rem 1rem 0;
+    height: 8vh;
+    background: linear-gradient( rgb(126, 121, 182), rgb(61, 56, 121))
+}
+
+/********** main content areas **********/
+
+#body {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 60vh;
+    max-width: 95vw;
+    font-family: 'Fira Sans', sans-serif;
+    position: relative;
+    height: auto;
+    min-height: 100%
+}
+
+#contentContainer {
+    display: flex;
+    flex-direction: space-around;
+    padding: 2rem;
+    min-height: 100%;
+    min-width: 80vw;
+    overflow: auto;
+}
+
+#centeriece {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100%;
+    max-width: 100%;
+    border: 2px solid red;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#image {
+    padding: 0 0 1rem 0;
+    max-height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+#portrait {
+    max-height: 400px;
+    max-width: 250px;
+    display: block;
+    margin: 0 1rem;
+    border-radius: 5px;
+}
+
+#caption {
+    text-align: center;
+}
+
+#tagline {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 3rem;
+}
+
+/* .rotated {
+    transform: rotate(90deg)
+} */
+
+#pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 65vw;
+    margin: auto;
+    height: auto;
+}
+
+#blankSpace {    
+    width: 100%;
+    padding-right: 4rem;
+}
+
+#navbar {
+    padding: 2rem;
+    max-width: 12vw;
+}
+
+/*********** sticky footer setup? I really don't know if this does anything **********/
+
+#pushFooter {
+    padding: 20px;
+    min-height: 100%;
+    margin: 0 auto -10vh;
+}
+
+.push {
+    height: auto;
+}
+
+/********** portfolio styles **********/
+
+.screenshot {
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.projectWrapper {
+    padding-bottom: 2rem;
+}
+
+/********** footer styles **********/
+
+#footer {
+    display: flex;
+    justify-content: center;    
+    width: 100%;
+    height: auto;
+}
+
+#footerContainer {
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+    width: 50%;
+    background-color: lightgrey;
+    border-radius: 3px;
+}
+
+#leftSide {
+    margin: 0 5rem;
+    padding: 2rem;
+}
+
+#rightSide {
+    margin-left: 2rem;
+}
+
+.footerInfo {
+    padding-bottom: 3px;
+    margin: 0;
+}
+
+#myInfo {
+    font-weight: 600;    
+    padding-bottom: 1rem;
+}
+
+#contactMe {
+    font-weight: 600;
+    font-style: italic;
+}
+
+/********* contact me modal pop-up *********/
+
+#modalContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 35vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 30rem 20rem;
+}
+
+#modal {
+    width: 25vw;
+    height: 20vh;
+    /* z-index: 3000; */
+    /* position: relative; */
+    /* bottom: 20;
+    left: 20; */
+    background-color: rgba(0, 0, 0, .3);
+    
+}
+
+#message {
+    width: 25vw;
+    height: 20vh;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px 0px gray;
+}
+
+#mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    height: 15rem;
+    width: 12rem;
+}
+
+/************ button styles **********/
+
+.buttonBlock {
+    padding: 3px;
+    margin: 0;
+}
+
+.button {
+    border-radius: 4px;
+    width: 5rem;
+}
